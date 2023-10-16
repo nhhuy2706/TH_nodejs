@@ -1,0 +1,15 @@
+<% const news=data.news; %>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h1 class="mb-4"><%= news.title %></h1>
+            <p class="text-muted">Tác giả: <%= news.author %></p>
+            <p class="text-muted">Ngày đăng: <%= news.publish_date %></p>
+            <p class="text-muted">Ngày cập nhật: <%= news.update_date %></p>
+            <img src="https://th.bing.com/th?id=ORMS.496d09fab5dfc36f87f0393b4f3f9ffa&pid=Wdp&w=612&h=304&qlt=90&c=1&rs=1&dpr=1&p=0"
+                class="img-fluid mb-4" alt="Ảnh Tin Tức">
+            <p class="lead">Nội dung tin tức:</p>
+            <p><%= news.content %></p>
+        </div>
+    </div>
+</div>
